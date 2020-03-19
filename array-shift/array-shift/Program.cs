@@ -29,28 +29,29 @@ namespace array_shift
                 int arrNum = Convert.ToInt32(userNum);
                 userArray[i] = arrNum;
 
-                BuildNewArray(int midpoint, int newLength userArray[]);
+                BuildNewArray(midpoint, newLength, userArray, value );
             }
 
-            public static int BuildNewArray(int midpoint, int newLength, userArray[])
+            static int[] BuildNewArray(int midpoint, int newLength, int[] userArray, int value )
         { 
             int[] newArray = new int[newLength];
-            for (int j=0; j<newArray.Length; j++)
-            {
-                if (j < (midpoint - 1))
+                for (int j = 0; j < newArray.Length; j++)
                 {
-                    newArray[j] = userArray[i];
-                }
-                if (j == midpoint - 1)
-                {
-                    newArray[j] = value;
-                }
-                if (j > (midpoint - 1))
-                {
-                    newArray[j] = userArray[i - 1];
-                }
+                    if (j < (midpoint - 1))
+                    {
+                        newArray[j] = userArray[j];
+                    }
+                    if (j == midpoint - 1)
+                    {
+                        newArray[j] = value;
+                    }
+                    if (j > (midpoint - 1))
+                    {
+                        newArray[j] = userArray[j - 1];
+                    }
+                 }
             return newArray;
-            }
+            
         }
     }
     }
