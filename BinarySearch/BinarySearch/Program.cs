@@ -29,8 +29,8 @@ namespace BinarySearch
 
                 if (key == binaryArray[middle])
                 {
-                    Console.WriteLine($"The index array is {++middle}");
-                    return ++middle;
+                    Console.WriteLine($"The index array is {middle}");
+                    return middle;
                 }
                 else if (key < binaryArray[middle])
                 {
