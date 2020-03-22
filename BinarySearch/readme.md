@@ -34,7 +34,7 @@ Given an array and a key value, use binary search to search the array for the ke
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Image 1](https://share.icloud.com/photos/0ez8yg_9RQLQ-T5XEhhZFlOYA)
+![Image 1](https://share.icloud.com/photos/0R1cVsqak0uFvZuFOgGWZyIfw)
 
 
 ---
