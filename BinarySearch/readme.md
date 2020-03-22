@@ -7,6 +7,7 @@
 Given an array and a key value, use binary search to search the array for the key value and return the index where it is found. If it is not found, return -1. 
 
 [Resources Used: https://www.c-sharpcorner.com/blogs/binary-search-implementation-using-c-sharp1](https://www.c-sharpcorner.com/blogs/binary-search-implementation-using-c-sharp1)
+
 [Resources Used: https://github.com/Aiverson1011/Data-Structures-and-Algorithms/tree/master/Challenges/BinarySearch](https://github.com/Aiverson1011/Data-Structures-and-Algorithms/tree/master/Challenges/BinarySearch)
 
 ---
