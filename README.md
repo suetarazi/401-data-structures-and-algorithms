@@ -2,3 +2,4 @@
 
 1. Array Shift
 1. Binary Search
+1. Linked List
