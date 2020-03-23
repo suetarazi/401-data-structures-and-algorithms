@@ -13,7 +13,10 @@ The Linked List has a Head property.
 There are 3 methods: one to insert, one to check to see if a value exists in a linked list and one that returns the list as a string.
 * The Insert method take in a value and adds a new node with that value and assigns it to the Head.
 * The Includes method takes in a value and returns true or false, depending on whether or not the value was found in the linked list.
-* toString takes all the values of the linked list and returns a string with -> between each node. 
+* toString takes all the values of the linked list and returns a string with -> between each node.
+
+##XUnit Testing:
+[Test Results](https://i.imgur.com/GaQE58u.png)
 
 ## Efficiency
 
