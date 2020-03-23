@@ -15,7 +15,7 @@ There are 3 methods: one to insert, one to check to see if a value exists in a l
 * The Includes method takes in a value and returns true or false, depending on whether or not the value was found in the linked list.
 * toString takes all the values of the linked list and returns a string with -> between each node.
 
-##XUnit Testing:
+## XUnit Testing:
 [Test Results](https://i.imgur.com/GaQE58u.png)
 
 ## Efficiency
