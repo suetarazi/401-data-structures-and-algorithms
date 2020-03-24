@@ -87,6 +87,53 @@ public class Linklist
             return sb.ToString();
 
         }
+        
+        /// <summary>
+        /// Method to append a node to the end of the linked list
+        /// </summary>
+        /// <param name="value">value is an integer and is the value of the node being added</param>
+        public void Append (int value)
+        {
+            while(Current != null)
+            {
+                if (Current.Next != null)
+                {
+                    Current = Current.Next;
+                }
+                else
+                {
+                    Node node = new Node();
+                    Current.Next = node;
+                    node.Value = value;
+                }
+                Current = Current.Next;
+            }
+        }
 
+        /// <summary>
+        /// Searches the list for a node with a specific value and inserts a new node before it with an assigned value 
+        /// </summary>
+        /// <param name="value">value to search for in the list</param>
+        /// <param name="newVal">value to assign to the newly created node</param>
+        public void InsertBefore(int value, int newVal)
+        {
+            if(Node.Next.Value = new Value)
+            {
+                new Node.Next = Current.Next;
+                Current.Next = new Node();
+            }
+        }
+
+
+        /// <summary>
+        /// Searches the list for a node with a specific value and inserts a new node after it with an assigned value
+        /// </summary>
+        /// <param name="value">value to search for in the list</param>
+        /// <param name="newVal">value to assign to the newly created node</param>
+        public void InsertAfter(int value, int newVal)
+        {
+
+
+        }
 }
 }
