@@ -119,7 +119,7 @@ public class Linklist
         {
             if(Node.Next.Value = new Value)
             {
-                new Node.Next = Current.Next;
+                new Node.next = Current.Next;
                 Current.Next = new Node();
             }
         }
