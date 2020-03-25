@@ -115,14 +115,14 @@ public class Linklist
         /// </summary>
         /// <param name="value">value to search for in the list</param>
         /// <param name="newVal">value to assign to the newly created node</param>
-        public void InsertBefore(int value, int newVal)
-        {
-            if(Node.Next.Value = new Value)
-            {
-                new Node.next = Current.Next;
-                Current.Next = new Node();
-            }
-        }
+        //public void InsertBefore(int value, int newVal)
+        //{
+        //    if(Node.Next.Value = new Value)
+        //    {
+        //        new Node.next = Current.Next;
+        //        Current.Next = new Node();
+        //    }
+        //}
 
 
         /// <summary>
@@ -134,6 +134,31 @@ public class Linklist
         {
 
 
+        }
+
+        /// <summary>
+        /// Takes in a number k and returns the kth from the end node value
+        /// </summary>
+        /// <param name="k">int value to search from the end of the list by</param>
+        /// <returns></returns>
+        public int LLKthFromEnd(int k)
+        {
+            Current = Head;
+
+            try
+                {
+                for(int i=1; i < k+1; i++)
+                {
+                    Current = Current.Next;
+                
+                }
+             
+                return Current.Value;
+                }
+            catch
+                {
+                throw new Exception("Exceeded length of list");
+                }
         }
 }
 }
