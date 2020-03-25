@@ -198,5 +198,29 @@ namespace XUnitTestProject1
 
         }
 
+        [Fact]
+        public void CanReturnNodeValueOfKthNodeFromEndOfLL()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(1);
+            ll.Insert(3);
+            ll.Insert(8);
+            ll.Insert(2);
+
+            int k = ll.LLKthFromEnd(2);
+            Assert.Equal(3, k);
+        }
+
+        public void KValueIsLongerThanLLException()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(1);
+            ll.Insert(3);
+            ll.Insert(8);
+            ll.Insert(2);
+
+            int k = ll.LLKthFromEnd(6);
+            //Assert.Equal(Null, k);
+        }
     }
 }
