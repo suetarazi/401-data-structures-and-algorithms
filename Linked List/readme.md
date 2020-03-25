@@ -19,8 +19,9 @@ There are 6 methods: one to insert, one to check to see if a value exists in a l
 * The InsertBefore method will add a node before a node with a specific value
 * The InsertAfter method will add a node after a node with a specific value
 
-## Whiteboard of InsertBefore algorithm:
+## Whiteboards:
 [InsertBefore](https://share.icloud.com/photos/0mNzfxA8iUbfxry8GicxTeUZg)
+[Return Value of Kth Node From The End](https://files.slack.com/files-pri/T039KG69K-F010TBNFVAS/img_8703.jpg?pub_secret=4af6ab70b9)
 
 ## XUnit Testing:
 [Test Results](https://i.imgur.com/GaQE58u.png)
@@ -29,6 +30,7 @@ There are 6 methods: one to insert, one to check to see if a value exists in a l
 
 BigO for inserting a node at the beginning is O(1).
 BigO for inserting a node before a node with a specific value is O(1).
+BigO for returning the value of the Kth node from the end is O(n)
 
 ## API
 * Insert method: takes in a value as an argument and adds a new node with that value and assigns it to the Head.
@@ -37,3 +39,4 @@ BigO for inserting a node before a node with a specific value is O(1).
 * Append method: takes in a value as an argument and adds a new node to the end of the linked list with that value assigned to it.
 * InsertBefore method: searches the linked list for a given value and inserts a new node immediately preceeding it with an assigned value.
 * InsertAfter method: searches the linked list for a given value and inserts a new node immediately following it with an assigned value.
+* LLKthFromEnd method: takes in a value K and searches for the Kth node from the end of the list, returning its value.
