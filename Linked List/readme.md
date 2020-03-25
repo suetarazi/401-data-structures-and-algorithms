@@ -18,9 +18,11 @@ There are 6 methods: one to insert, one to check to see if a value exists in a l
 * The Append method will add a node to the end of the linked list and assign it a value.
 * The InsertBefore method will add a node before a node with a specific value
 * The InsertAfter method will add a node after a node with a specific value
+* The Return Value of Kth Node From the End will search for the Kth node from the end of the linked list and return its value
 
 ## Whiteboards:
 [InsertBefore](https://share.icloud.com/photos/0mNzfxA8iUbfxry8GicxTeUZg)
+
 [Return Value of Kth Node From The End](https://files.slack.com/files-pri/T039KG69K-F010TBNFVAS/img_8703.jpg?pub_secret=4af6ab70b9)
 
 ## XUnit Testing:
