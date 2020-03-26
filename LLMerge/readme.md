@@ -15,6 +15,14 @@ There are 6 methods in the linkedlist folder that we may be using here:
 * The InsertAfter method will add a node after a node with a specific value
 * The Return Value of Kth Node From the End will search for the Kth node from the end of the linked list and return its value
 
+### Inputs and Expected Outputs
+
+| Input | Expected Output |
+| :----------- | :----------- |
+| [1,3,2] [5,9,4] | [1,5, 3, 9, 2, 4] |
+| [1, 3] [5, 9, 4] | [1, 5, 3, 9, 4] |
+
+
 ## Whiteboards:
 [Merging Two Unsorted Linked Lists](https://share.icloud.com/photos/0mNzfxA8iUbfxry8GicxTeUZg)
 
