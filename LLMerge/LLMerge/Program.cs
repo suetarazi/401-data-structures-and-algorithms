@@ -173,7 +173,10 @@ namespace LLMerge
             while (List1.Value != Null && List2.Value != Null)
                 //traverse List2 and call insert before for each node into List1
                 
-                    
+                    for(int i=0; i< List1.Length; i++)
+                    { 
+                   
+                    }
         }
         
 
