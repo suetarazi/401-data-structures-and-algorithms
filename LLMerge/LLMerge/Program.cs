@@ -169,13 +169,18 @@ namespace LLMerge
 
             static void LLMerge(Linklist List1, Linklist List2)
         {
-            List1.Current = Head;
-            while (List1.Value != Null && List2.Value != Null)
-                //traverse List2 and call insert before for each node into List1
-                
-                    for(int i=0; i< List1.Length; i++)
-                    { 
-                   
+                Head = Current;
+                Node refA = List1.Current.Next;
+                Node refB = List2.Current.Next;
+                List1.Current = Head;
+            while (List1.Value != null && List2.Value != null)
+                    //traverse List2 and call insert before for each node into List1
+                    while (List1.next != null)
+                    {
+                    List1.Current.Next = refA;
+                        List2.Current.Next = refB;
+                    
+                        
                     }
         }
         
