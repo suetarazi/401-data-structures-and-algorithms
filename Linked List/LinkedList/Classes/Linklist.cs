@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace LinkedList.Classes
-{ 
-public class Linklist
 {
+    public class Linklist
+    {
         public Node Head { get; set; }
         private Node Current { get; set; }
 
@@ -27,8 +27,8 @@ public class Linklist
             //Set next to Head
             node.Next = Head;
 
-        //The new node is now set as Head
-        Head = node;
+            //The new node is now set as Head
+            Head = node;
 
         }
 
@@ -44,7 +44,7 @@ public class Linklist
 
 
             //while loop to search through linked list
-            while(Current != null)
+            while (Current != null)
             {
                 //conditional to see if current value is the value we are searching for and returns true if it is
                 if (Current.Value == value)
@@ -58,11 +58,7 @@ public class Linklist
             return false;
 
         }
-
-        /// <summary>
-        /// This is a method that takes in no args and returns a string of all the node values in the linked list
-        /// </summary>
-        /// <returns>a string of all the node values in the linked list</returns>
+        
         public override string ToString()
         {
             //set current to the head
@@ -117,10 +113,18 @@ public class Linklist
         /// <param name="newVal">value to assign to the newly created node</param>
         public void InsertBefore(int value, int newVal)
         {
-            if(Node.Next.Value = new Value)
+            Current = Head;
+   
+
+            while (Current.Next != null)
             {
-                new Node.next = Current.Next;
-                Current.Next = new Node();
+                if (Current.Next.Value == value)
+                {
+                    Node newNode = new Node();
+                    newNode.Next = Current.Next;
+                    Current.Next.Value = newVal;
+                    Current.Next = newNode;
+                }
             }
         }
 
@@ -132,8 +136,44 @@ public class Linklist
         /// <param name="newVal">value to assign to the newly created node</param>
         public void InsertAfter(int value, int newVal)
         {
+            Current = Head;
+            
+            while(Current.Next != null)
+            {
+                if(Current.Value == value)
+                {
+                    Node newNode = new Node();
+                    newNode.Next = Current.Next;
+                    Current.Next.Value = newVal;
+                    Current.Next = newNode;
+                }
+            }
+           
+        }
 
+        /// <summary>
+        /// Takes in a number k and returns the kth from the end node value
+        /// </summary>
+        /// <param name="k">int value to search from the end of the list by</param>
+        /// <returns></returns>
+        public int LLKthFromEnd(int k)
+        {
+            Current = Head;
 
+            try
+                {
+                for(int i=1; i < k+1; i++)
+                {
+                    Current = Current.Next;
+                
+                }
+             
+                return Current.Value;
+                }
+            catch
+                {
+                throw new Exception("Exceeded length of list");
+                }
         }
 }
 }
