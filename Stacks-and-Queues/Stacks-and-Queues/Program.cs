@@ -9,6 +9,7 @@ namespace Stacks_and_Queues
         {
             Console.WriteLine("Hello World!");
             Stack stack = new Stack();
+            Queue queue = new Queue();
         
         }
 

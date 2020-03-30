@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Stacks_and_Queues.Classes
 {
-    class Stack
+    public class Stack
     {
         Node Top = null;
 
@@ -15,6 +15,7 @@ namespace Stacks_and_Queues.Classes
             node.Value = value;
             node.Next = Top;
             Top = node;
+            
         }
 
         public int Pop()
@@ -28,7 +29,7 @@ namespace Stacks_and_Queues.Classes
             }
             else
                 throw new Exception("error: empty stack");
-        
+
         }
 
         public int Peek()
