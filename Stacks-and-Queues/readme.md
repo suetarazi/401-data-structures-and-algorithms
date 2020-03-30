@@ -47,7 +47,7 @@ Perform XUnit testing on all methods.
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Stacks & Queues - Peek() method for Stack](https://share.icloud.com/photos/0kPDJxOMRnWsyxQ3QacrYLfKA)
+![Stacks & Queues - Peek() method for Stack](https://i.imgur.com/qfrtjPI.jpg)
 
 
 ---
