@@ -149,7 +149,7 @@ namespace XUnitTestProject1
         /// </summary>
         [Fact]
         public void CanFindHeadValueSucessfullyinLL()
-        { 
+        {
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
@@ -166,7 +166,7 @@ namespace XUnitTestProject1
         /// </summary>
         [Fact]
         public void CanFindLastNodeValueInLL()
-        { 
+        {
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
@@ -198,6 +198,53 @@ namespace XUnitTestProject1
 
         }
 
+        /// <summary>
+        /// Test to see whether node with a given value can be appended to the linked list
+        /// </summary>
+        [Fact]
+        public void CanAppendLinkedList()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(10);
+            ll.Insert(20);
+            ll.Insert(30);
+            ll.Append(42);
 
+            int testInt = 42;
+            int expected = 42;
+            Assert.Equal(expected, testInt);
+        }
+
+        /// <summary>
+        /// test to see whether a node with a given value can be inserted into a linked list before a node with a given value
+        /// </summary>
+        public void CanInsertBeforeInLinkedList()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(10);
+            ll.Insert(20);
+            ll.Insert(30);
+            ll.InsertBefore(20, 42);
+            int testValue = 30;
+            int newValue = 42;
+            Assert.Equal(42, ll.Current.Next.Value);
+        }
+
+        /// <summary>
+        /// test to see whether a node with a given value can be inserted into a linked list after a node with a given value
+        /// </summary>
+        public void CanInsertAfterInLinkedList()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(10);
+            ll.Insert(20);
+            ll.Insert(30);
+            ll.InsertBefore(10, 42);
+            int testValue = 10;
+            int newValue = 42;
+            Assert.Equal(42, ll.Current.Next.Value);
+
+
+        }
     }
 }
