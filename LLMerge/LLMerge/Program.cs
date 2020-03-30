@@ -1,7 +1,10 @@
 ﻿using System;
+using node.classes;
 
 namespace LLMerge
 {
+    public Node Head { get; set; }
+    private Node Current { get; set; }
     class Program
     {
         static void Main(string[] args)
@@ -38,152 +41,28 @@ namespace LLMerge
 
             }
 
-            /// <summary>
-            /// A boolean method that checks whether or not a linked list includes a node of a specific value.
-            /// </summary>
-            /// <param name="value">The value that is being searched for in the list</param>
-            /// <returns>true if node is found, otherwise returns false</returns>
-            public bool Includes(int value)
-            {
-                //Current is set to Head
-                Current = Head;
-
-
-                //while loop to search through linked list
-                while (Current != null)
-                {
-                    //conditional to see if current value is the value we are searching for and returns true if it is
-                    if (Current.Value == value)
-                    {
-                        return true;
-                    }
-                    //moves to the next node and loops again
-                    Current = Current.Next;
-                }
-                //returns false if not found at all in the list
-                return false;
-
-            }
-
-            /// <summary>
-            /// This is a method that takes in no args and returns a string of all the node values in the linked list
-            /// </summary>
-            /// <returns>a string of all the node values in the linked list</returns>
-            public override string ToString()
-            {
-                //set current to the head
-                Current = Head;
-
-                //using StringBuilder to build our string of node values
-                StringBuilder sb = new StringBuilder();
-
-                //using a while loop to move through the linked list
-                while (Current != null)
-                {
-                    //grabbing each value of the node and appending it to a string with a " -> " afterwards
-                    sb.Append($"{Current.Value} -> ");
-                    //Move to the next node
-                    Current = Current.Next;
-
-                }
-
-                //adding the string "NULL" at the end of our string
-                sb.Append("NULL");
-                //return the string
-                return sb.ToString();
-
-            }
-
-            /// <summary>
-            /// Method to append a node to the end of the linked list
-            /// </summary>
-            /// <param name="value">value is an integer and is the value of the node being added</param>
-            public void Append(int value)
-            {
-                while (Current != null)
-                {
-                    if (Current.Next != null)
-                    {
-                        Current = Current.Next;
-                    }
-                    else
-                    {
-                        Node node = new Node();
-                        Current.Next = node;
-                        node.Value = value;
-                    }
-                    Current = Current.Next;
-                }
-            }
-
-            /// <summary>
-            /// Searches the list for a node with a specific value and inserts a new node before it with an assigned value 
-            /// </summary>
-            /// <param name="value">value to search for in the list</param>
-            /// <param name="newVal">value to assign to the newly created node</param>
-            public void InsertBefore(int value, int newVal)
-            {
-                if (Node.Next.Value = new Value)
-                {
-                    new Node.next = Current.Next;
-                    Current.Next = new Node();
-                }
-            }
-
-
-            /// <summary>
-            /// Searches the list for a node with a specific value and inserts a new node after it with an assigned value
-            /// </summary>
-            /// <param name="value">value to search for in the list</param>
-            /// <param name="newVal">value to assign to the newly created node</param>
-            public void InsertAfter(int value, int newVal)
-            {
-
-
-            }
-
-            /// <summary>
-            /// Takes in a number k and returns the kth from the end node value
-            /// </summary>
-            /// <param name="k">int value to search from the end of the list by</param>
-            /// <returns></returns>
-            public int LLKthFromEnd(int k)
-            {
-                Current = Head;
-
-                try
-                {
-                    for (int i = 1; i < k + 1; i++)
-                    {
-                        Current = Current.Next;
-
-                    }
-
-                    return Current.Value;
-                }
-                catch
-                {
-                    throw new Exception("Exceeded length of list");
-                }
-            }
 
             static void LLMerge(Linklist List1, Linklist List2)
-        {
+            {
                 Head = Current;
                 Node refA = List1.Current.Next;
                 Node refB = List2.Current.Next;
                 List1.Current = Head;
-            while (List1.Value != null && List2.Value != null)
+                while (List1.Value != null && List2.Value != null)
                     //traverse List2 and call insert before for each node into List1
                     while (List1.next != null)
                     {
-                    List1.Current.Next = refA;
+                        List1.Current.Next = refA;
                         List2.Current.Next = refB;
-                    
-                        
-                    }
-        }
-        
 
+                        List1.Current.Next = List2.Current;
+                        List2.Current.Next = refA;
+                        refA.Current.Next = refB;
+
+                    }
+            }
+
+
+        }
     }
 }
