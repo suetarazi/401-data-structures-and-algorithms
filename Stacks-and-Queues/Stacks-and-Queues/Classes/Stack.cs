@@ -38,7 +38,7 @@ namespace Stacks_and_Queues.Classes
                 return value;
             }
             else
-                throw new Exception("error: empty stack");
+                throw new Exception();
 
         }
 
@@ -54,7 +54,7 @@ namespace Stacks_and_Queues.Classes
                 return value;
             }
             else
-                throw new Exception("error: empty stack");
+                throw new Exception();
         }
     
         /// <summary>

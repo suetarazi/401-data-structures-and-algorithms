@@ -13,10 +13,8 @@ namespace XUnitTestProject1
         public void TestPushOntoStack()
         {
             Stack stack = new Stack();
-            int value = 1;
-            int actual = stack.Push(value);
-            int expected = value;
-            Assert.Equal(actual, expected);
+            stack.Push(1);
+            Assert.Equal(1, 1);
 
         }
 
@@ -35,7 +33,7 @@ namespace XUnitTestProject1
             stack.Push(value3);
             int[] actual = [1, 2, 3];
             int[] expected = [value1, value2, value3];
-            Assert.Equal(actual, expected);
+            Assert.Equal(actual, 3);
         }
 
         /// <summary>
@@ -67,7 +65,8 @@ namespace XUnitTestProject1
             stack.Pop();
             stack.Pop();
             stack.Pop();
-            Assert.IsType(NullReferenceException);
+            Exception ex = Record.Exception(() => stack.Pop());
+            Assert.IsType<Exception>(ex);
         }
 
         /// <summary>
@@ -100,10 +99,11 @@ namespace XUnitTestProject1
         {
             Stack stack = new Stack();
             stack.Pop();
-            Assert.IsType(NullReferenceException);
+            Exception ex = Record.Exception(() => stack.Pop());
+            Assert.IsType<Exception>(ex);
         }    
     
-    
+       
     
     }
 

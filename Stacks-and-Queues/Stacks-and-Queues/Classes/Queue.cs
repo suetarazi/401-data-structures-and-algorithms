@@ -17,12 +17,19 @@ namespace Stacks_and_Queues.Classes
         /// </summary>
         /// <param name="rear"></param>
         /// <param name="value"></param>
-        public void Enqueue(Node rear, int value)
+        public void Enqueue(int value)
         {
-            Node node = new Node();
-            node.Value = value;
-            node.rear = node;
-            node = rear;
+                Node node = new Node();
+            if (rear != null)
+            {
+                node.Value = value;
+                rear.Next = node;
+                node = rear;
+            }
+            else
+            {
+                rear = node;
+            }
 
         }
 
@@ -34,13 +41,13 @@ namespace Stacks_and_Queues.Classes
         {
             if (front != null)
             {
-                var temp = node.front;
-                node.front = node.front.next;
-                temp.next = None;
-                return temp.Value;
+                var temp = front;
+                front = front.Next;
+                front.Next = null;
+                return front.Value;
             }
             else
-                throw new Exception("error: empty queue");
+                throw new Exception();
         }
     
         /// <summary>
@@ -51,12 +58,12 @@ namespace Stacks_and_Queues.Classes
         {
             if (front != null)
             {
-                int value = front.value;
-                return value;
+                
+                return front.Value;
 
             }
             else
-                throw new Exception("error: empty queue");
+                throw new Exception();
         }
     
         /// <summary>
