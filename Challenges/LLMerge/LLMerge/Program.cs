@@ -9,8 +9,10 @@ namespace LLMerge
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LinkedList list1 = new LinkedList();
-            LLMerge(List1, List2);
+            Linklist list1 = new Linklist();
+            Linklist list2 = new Linklist();
+
+            LLMerge(list1, list2);
         }
 
         static void LLMerge(Linklist List1, Linklist List2)
