@@ -1,4 +1,5 @@
 ﻿using System;
+using Fifo_Animal_Shelter.Classes;
 
 namespace Fifo_Animal_Shelter
 {
@@ -7,6 +8,10 @@ namespace Fifo_Animal_Shelter
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //Enqueue("animal");
+            //Dequeue("cat");
+        
         }
+
     }
 }

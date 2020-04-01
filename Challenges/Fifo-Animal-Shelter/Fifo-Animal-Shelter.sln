@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fifo-Animal-Shelter", "Fifo-Animal-Shelter\Fifo-Animal-Shelter.csproj", "{272DD5A1-2EA4-4D65-B922-245167D0E995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{FBA19A59-0582-4F06-9F7D-F97497208033}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{272DD5A1-2EA4-4D65-B922-245167D0E995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{272DD5A1-2EA4-4D65-B922-245167D0E995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{272DD5A1-2EA4-4D65-B922-245167D0E995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA19A59-0582-4F06-9F7D-F97497208033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA19A59-0582-4F06-9F7D-F97497208033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA19A59-0582-4F06-9F7D-F97497208033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA19A59-0582-4F06-9F7D-F97497208033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
