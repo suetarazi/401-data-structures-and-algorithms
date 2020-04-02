@@ -3,7 +3,7 @@ using MultiBracketValidation.Classes;
 
 namespace MultiBracketValidation
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -20,7 +20,7 @@ namespace MultiBracketValidation
             {
                 if(c == "(" || c == "{" || c == "[")
                 {
-                    stack.Push();
+                    stack.Push(c);
                 }
                 else if (c == ")" || c== "}" || c == "]")
                 {
@@ -40,18 +40,18 @@ namespace MultiBracketValidation
             else
                 return false;
         }
-        private static char GetComplimentBracket(char c)
+        public static string GetComplimentBracket(string c)
         {
             switch(c)
             {
-                case ')':
-                    return '(';
-                case '}':
-                    return '{';
-                case ']':
-                    return '[';
+                case ")":
+                    return "(";
+                case "}":
+                    return "{";
+                case "]":
+                    return "[";
                 default:
-                    return ' ';
+                    return " ";
             }
         }
     

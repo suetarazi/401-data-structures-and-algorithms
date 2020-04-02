@@ -4,20 +4,19 @@ using System.Text;
 
 namespace MultiBracketValidation.Classes
 {
-    class Stack
+    public class Stack
     {
         /// <summary>
         /// Stack class for all stack methods
         /// </summary>
-        public class Stack
-        {
+        
             Node Top = null;
 
             /// <summary>
             /// method to push a value onto the stack
             /// </summary>
             /// <param name="value">int value of node being pushed</param>
-            public void Push(int value)
+            public void Push(string value)
             {
                 Node node = new Node();
                 node.Value = value;
@@ -30,12 +29,12 @@ namespace MultiBracketValidation.Classes
             /// Pop method to pop a node off a stack and return its value
             /// </summary>
             /// <returns>value of popped node</returns>
-            public int Pop()
+            public string Pop()
             {
 
                 if (Top != null)
                 {
-                    int value = Top.Value;
+                    string value = Top.Value;
                     Top = Top.Next;
                     return value;
                 }
@@ -48,11 +47,11 @@ namespace MultiBracketValidation.Classes
             /// peek method to peek at value of top node
             /// </summary>
             /// <returns>value of top node</returns>
-            public int Peek()
+            public string Peek()
             {
                 if (Top != null)
                 {
-                    int value = Top.Value;
+                    string value = Top.Value;
                     return value;
                 }
                 else
@@ -74,4 +73,3 @@ namespace MultiBracketValidation.Classes
             }
         }
     }
-}
