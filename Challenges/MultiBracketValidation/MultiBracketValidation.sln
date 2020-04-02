@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBracketValidation", "MultiBracketValidation\MultiBracketValidation.csproj", "{1CEF61F9-1FB8-493A-96D5-F27BF44F8916}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{C46CB9FC-572C-43CB-8FC5-BEB473671661}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1CEF61F9-1FB8-493A-96D5-F27BF44F8916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CEF61F9-1FB8-493A-96D5-F27BF44F8916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CEF61F9-1FB8-493A-96D5-F27BF44F8916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46CB9FC-572C-43CB-8FC5-BEB473671661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46CB9FC-572C-43CB-8FC5-BEB473671661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46CB9FC-572C-43CB-8FC5-BEB473671661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46CB9FC-572C-43CB-8FC5-BEB473671661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
