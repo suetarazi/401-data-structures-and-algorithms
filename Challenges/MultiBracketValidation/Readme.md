@@ -4,7 +4,9 @@
 ---
 
 ### Problem Domain
+
 Write a method that takes in a string as its only argument and returns a boolean showing whether or not the brackets in the string are balanced. 
+
 ---
 
 ### Inputs and Expected Outputs:
@@ -28,7 +30,7 @@ Write a method that takes in a string as its only argument and returns a boolean
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Multibracket Validation]()
+![Multibracket Validation](https://i.imgur.com/jRzSpQC.jpg)
 
 
 ---
