@@ -115,15 +115,14 @@ public class Linklist
         /// </summary>
         /// <param name="value">value to search for in the list</param>
         /// <param name="newVal">value to assign to the newly created node</param>
-        //public void InsertBefore(int value, int newVal)
-        //{
-        //    if(Node.Next.Value = new Value)
-        //    {
-        //        new Node.next = Current.Next;
-        //        Current.Next = new Node();
-        //    }
-        //}
-
+        public void InsertBefore(int value, int newVal)
+        {
+            if(Node.Next.Value = new Value)
+            {
+                new Node.Next = Current.Next;
+                Current.Next = new Node();
+            }
+        }
 
         /// <summary>
         /// Searches the list for a node with a specific value and inserts a new node after it with an assigned value
