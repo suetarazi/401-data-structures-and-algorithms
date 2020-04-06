@@ -7,11 +7,11 @@ namespace QueueWithStacks.Classes
 
 {
     public class PseudoQueue
-        {
-            Stack stack1 = new Stack();
-            Stack stack2 = new Stack();
-            Node Top = null;
 
+    {
+        Stack stack1 = new Stack();
+        Stack stack2 = new Stack();
+        Node Top = null;
         
     public void Enqueue(int value)
         {
