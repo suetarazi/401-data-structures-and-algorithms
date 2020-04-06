@@ -9,9 +9,9 @@ namespace XUnitTestProject1
         [Fact]
         public void EnqueueValueOntoExistingStack()
         {
-            Stack stack = new Stack;
             int Value = 5; 
-
+            Pseudoqueue.Enqueue(Value);
+            
         }
     }
 }

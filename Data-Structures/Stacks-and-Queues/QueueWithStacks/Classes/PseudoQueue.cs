@@ -7,12 +7,13 @@ namespace QueueWithStacks.Classes
 
 {
     public class PseudoQueue
+
     {
         Stack stack1 = new Stack();
         Stack stack2 = new Stack();
         Node Top = null;
-
-        public void Enqueue(int value)
+        
+    public void Enqueue(int value)
         {
             while(stack1.peek() != null)
             {
@@ -36,6 +37,7 @@ namespace QueueWithStacks.Classes
             }
             return value;
         }
+        
     }
 
 }
