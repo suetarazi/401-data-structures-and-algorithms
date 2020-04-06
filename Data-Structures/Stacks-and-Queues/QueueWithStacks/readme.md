@@ -40,7 +40,7 @@ Perform XUnit testing on all methods.
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Queue with Stacks - Enqueue]()
+![Queue with Stacks - Enqueue](https://i.imgur.com/IUUcY65.jpg)
 
 
 ---
