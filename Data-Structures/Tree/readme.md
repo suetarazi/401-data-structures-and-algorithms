@@ -14,7 +14,7 @@ Perform XUnit testing on all methods.
 
 | Input | Expected Output |
 | :----------- | :----------- |
-| none | An array of values |
+| Tree | An array of values |
  
 
 ---
