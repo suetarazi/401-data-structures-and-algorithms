@@ -7,7 +7,7 @@ namespace FizzBuzzTree
     class FizzBuzzTreeChallenge
     {
 
-        public BinaryTree binaryTree(Node root)
+        public BinaryTree binaryTree(BinaryTree root)
         {
             BinaryTree FizzBuzzTree = new BinaryTree();
 
