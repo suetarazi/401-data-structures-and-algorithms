@@ -7,5 +7,8 @@
 1. Queue with Stacks
 1. FIFO Animal Shelter
 1. Linked List Merge
-2. Multi-Bracket Validation
+1. Multi-Bracket Validation
+1. BinaryTree and BinaryTreeSearch
+1. FizzBuzzTree
+1. Tree: Breadth First
 
