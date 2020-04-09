@@ -7,6 +7,11 @@ namespace FindMaximumBinaryTree
 {
     class FindMaximumBinaryTree
     {
+        /// <summary>
+        /// traverses binary tree using breadth first traversal and returns the maximum value found
+        /// </summary>
+        /// <param name="binaryTree"></param>
+        /// <returns>max value (integer type)</returns>
         public int BreadthFirst(BinaryTree binaryTree)
         {
             int max = 0;
@@ -20,7 +25,7 @@ namespace FindMaximumBinaryTree
 
             int root = binaryTree.root.Value;
             queue.Enqueue(root);
-            root.value = max;
+            root.Value = max;
             
             while (queue.Peek() != null)
             {
