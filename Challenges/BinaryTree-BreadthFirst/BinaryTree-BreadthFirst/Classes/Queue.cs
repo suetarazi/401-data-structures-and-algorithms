@@ -34,14 +34,14 @@ namespace BinaryTree_BreadthFirst
         /// dequeue method removes the node from the front of the line and returns its value
         /// </summary>
         /// <returns>value</returns>
-        public int Dequeue()
+        public Node Dequeue()
         {
             if (front != null)
             {
                 var temp = front;
                 front = front.Next;
                 front.Next = null;
-                return front.Value;
+                return front;
             }
             else
                 throw new Exception();
