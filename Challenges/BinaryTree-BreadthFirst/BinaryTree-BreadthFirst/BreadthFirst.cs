@@ -12,24 +12,24 @@ namespace BinaryTree_BreadthFirst
         /// </summary>
         /// <param name="binaryTree"></param>
         /// <returns>A list of values from the tree</returns>
-        public List<int> BreadthFirst(BinaryTree binaryTree)
+        public List<int> Breadth(BinaryTree binaryTree)
         {
             List<int> ReturnList = new List<int>();
 
             Queue breadth = new Queue();
 
-            Node node = new Node();
+            //Node node = new Node();
 
             Node front = null;
-            Node rear = null;
+            
 
             int root = binaryTree.root.Value;
             breadth.Enqueue(root);
 
             while(breadth.Peek() != null)
             {
-                node.front = breadth.Dequeue();
-                front.Value = ReturnList.Add(Value);
+                front = breadth.Dequeue();
+                ReturnList.Add(front.Value);
 
                 if(front.Left != null)
                 {
