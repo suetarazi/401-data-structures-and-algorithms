@@ -5,6 +5,10 @@ namespace InsertionSort
 {
     class Program
     {
+        /// <summary>
+        /// No test cases were required for this challenge, so arrays were created in this method and then passed to the SortArray method 
+        /// </summary>
+        /// <param name="args">default</param>
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
