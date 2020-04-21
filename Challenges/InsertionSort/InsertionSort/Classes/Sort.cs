@@ -30,7 +30,10 @@ namespace InsertionSort
                 }
                 Swap.SwapValues(i, lowestValue);   
             }
-            Console.WriteLine(array);   
+            for (int k = 0; k < array.Length; k++)
+            {
+                Console.WriteLine(array[k]);
+            }
         }
     }
 }
