@@ -5,6 +5,10 @@ namespace MergeSort
 {
     class Program
     {
+        /// <summary>
+        /// main method to declare test arrays and call MergeSortMethod to pass test arrays in
+        /// </summary>
+        /// <param name="args">default</param>
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
