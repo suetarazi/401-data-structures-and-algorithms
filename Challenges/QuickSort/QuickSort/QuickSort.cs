@@ -5,7 +5,15 @@ using System.Text;
 namespace QuickSort
 {
     public class QuickSort
+        
     {
+        /// <summary>
+        /// method to quick sort array
+        /// </summary>
+        /// <param name="arr">given array to be sorted</param>
+        /// <param name="start">starting point</param>
+        /// <param name="end">ending point</param>
+        /// <returns></returns>
         public int[] SortQuick(int[] arr, int start, int end)
         {
             int i;
@@ -21,6 +29,13 @@ namespace QuickSort
             return Arr;
         }
 
+        /// <summary>
+        /// method to create partitions in the array
+        /// </summary>
+        /// <param name="arr">array to be partitioned</param>
+        /// <param name="start">starting point</param>
+        /// <param name="end">ending point</param>
+        /// <returns></returns>
         public int Partition(int[] arr, int start, int end)
         {
             int temp;
