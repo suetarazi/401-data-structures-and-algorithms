@@ -31,9 +31,10 @@ namespace RepeatedWord
                     string value = "z";
                     hashtable.Add(word, value);
                 }
+                if (hashtable.Contains(word) != true)
+                    return null; 
             }
-            return null; 
-
+            return null;
         }
 
 
