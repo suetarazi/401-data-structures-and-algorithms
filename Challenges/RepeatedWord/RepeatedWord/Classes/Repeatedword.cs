@@ -13,7 +13,7 @@ namespace RepeatedWord
         /// </summary>
         /// <param name="words">long string of words</param>
         /// <returns>the first word that is a duplicate</returns>
-        public string RepeatedWord(string words)
+        public string FindRepeatedWord(string words)
         {
             string input = words.ToLower();
             string[] splitUp = input.Split();
