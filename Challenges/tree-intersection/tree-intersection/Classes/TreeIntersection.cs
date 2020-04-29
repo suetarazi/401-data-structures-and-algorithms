@@ -22,6 +22,7 @@ namespace tree_intersection
             Queue queue = new Queue();
             queue.Enqueue(tree2);
 
+            //breadth first traversal:
             while (queue.Count > 0)
             {
                 var node = queue.Dequeue();
