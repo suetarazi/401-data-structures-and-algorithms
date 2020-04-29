@@ -30,7 +30,7 @@ Write a method that takes in two binary trees and returns a set of values found 
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Tree Intersection]()
+![Tree Intersection](https://i.imgur.com/eybNdFz.jpg)
 
 
 ---
