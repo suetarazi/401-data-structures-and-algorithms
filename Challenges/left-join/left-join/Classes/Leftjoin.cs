@@ -7,6 +7,12 @@ namespace left_join.Classes
 {
     public class Leftjoin
     {
+        /// <summary>
+        /// method that performs a left join of two hashmaps and returns a hashtable
+        /// </summary>
+        /// <param name="hashmap1">hashmap of key:value pairs</param>
+        /// <param name="hashmap2">hashmap of key:value pairs</param>
+        /// <returns></returns>
         public Hashtable LeftJoin (Hashtable hashmap1, Hashtable hashmap2)
         {
             //input are two hashmaps (note hashmaps are a fixed size and do not allow for linked lists or collisions
