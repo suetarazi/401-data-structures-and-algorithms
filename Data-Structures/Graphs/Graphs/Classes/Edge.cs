@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    class Edge<T>
+    public class Edge<T>
     {
 
         public int Weight { get; set; }
