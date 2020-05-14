@@ -1,11 +1,11 @@
-## Tree Intersection
+## Get-Edge
 *Author: Sue Tarazi*
 
 ---
 
 ### Problem Domain
 
-Write a method that takes in two binary trees and returns a set of values found in both trees.
+Write a method that takes in a graph and an array of city names. Return whether the full trip is possible with direct flights and how much it would cost.
 
 ---
 
@@ -13,7 +13,7 @@ Write a method that takes in two binary trees and returns a set of values found 
 
 | Input | Expected Output |
 | :----------- | :----------- |
-| two binary trees | a list of values |
+| graph, array | Adjacency List |
  
 
 ---
@@ -30,7 +30,7 @@ Write a method that takes in two binary trees and returns a set of values found 
 
 ### Whiteboard Visual
 ***[Your Whiteboard Image]***
-![Tree Intersection](https://i.imgur.com/eybNdFz.jpg)
+![Get Edge](https://i.imgur.com/JAuC5DB.jpg)
 
 
 ---
