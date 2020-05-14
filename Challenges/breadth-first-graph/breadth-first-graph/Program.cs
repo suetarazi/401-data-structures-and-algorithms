@@ -12,13 +12,24 @@ namespace breadth_first_graph
             //Graph<string> graph = new Graph<string>();
         }
 
+        /// <summary>
+        /// method to take in graph and array and return true if connect & return length of edge; else return false.
+        /// </summary>
     public static List<AdjacencyList> results GetEdge(Graph graph, string[] cities)
         {
             foreach (string city in cities)
             {
-                List<AdjacencyList>.Add(graph.GetNeighbors(city));
+                results.Add(graph.GetNeighbors(city));
+            
+                if (results.Contains(city)
+                    {
+                    return ("true", Edge); 
+                    }
+                else
+                {
+                    return false;
+                }
             }
-                return results;   
         }
     }
 
