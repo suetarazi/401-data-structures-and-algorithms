@@ -10,7 +10,7 @@ namespace ArraySum
             Console.WriteLine("Hello World!");
             int[] watch = new int[] { 1, 2, 3, 4, 5 };
             TVWatch(watch, 3);
-
+            TVWatch2(watch, 3);
 
         }
 
@@ -28,6 +28,32 @@ namespace ArraySum
         //[6,9,12]
 
         //array index 0-2; 1-3, 2-4
+
+        /// <summary>
+        /// Method using a single for loop
+        /// </summary>
+        /// <param name="watch">input array</param>
+        /// <param name="interval">step size for array</param>
+        /// <returns>results array of summed integer values</returns>
+        public static int[] TVWatch2(int[] watch, int interval)
+        {
+            int[] resultsArr = new int[watch.Length - (interval-1)];
+            
+            int initialSum = watch[0] + watch[1] + watch[2];
+            Console.WriteLine($"The initial sum is {initialSum}");
+
+            for(int i=0; i<watch.Length - (interval-1); i++)
+            {
+                resultsArr[i] += initialSum - i + (i + 3);
+                Console.WriteLine($"results array is now {resultsArr[i]}");
+                initialSum = resultsArr[i];
+                i++;
+            }
+
+            return resultsArr;
+        }
+
+
 
         public static int[] TVWatch(int[] watch, int interval)
         {
@@ -47,7 +73,7 @@ namespace ArraySum
                     i++;
                 }
                 returnArr[j] = sum;
-                //Console.WriteLine(returnArr);
+                Console.WriteLine($"The return array at j is now {returnArr[j]}");
                 j++;
             }
 
