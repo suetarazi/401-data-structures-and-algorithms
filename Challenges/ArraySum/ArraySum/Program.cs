@@ -66,7 +66,7 @@ namespace ArraySum
             //for (j = 0; j < watch.Length - 1; j++)
             {
 
-                for (i = 0; i < 2; i++)
+                for (i = 0; i <= 2; i++)
                 {
                     sum += watch[i + j];
                     Console.WriteLine($"The sum is {sum}");
