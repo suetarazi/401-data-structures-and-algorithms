@@ -117,10 +117,12 @@ public class Linklist
         /// <param name="newVal">value to assign to the newly created node</param>
         public void InsertBefore(int value, int newVal)
         {
-            if(Node.Next.Value = new Value)
+            if(Current.Next.Value == value)
             {
-                new Node.Next = Current.Next;
-                Current.Next = new Node();
+                Node node = new Node();
+                Current.Next = node;
+                node.Value = newVal;
+         
             }
         }
 
@@ -131,7 +133,12 @@ public class Linklist
         /// <param name="newVal">value to assign to the newly created node</param>
         public void InsertAfter(int value, int newVal)
         {
-
+            if(Current.Value == value)
+            {
+                Node node = new Node();
+                Current.Next = node;
+                node.Value = newVal;
+            }
 
         }
 
