@@ -5,7 +5,7 @@ namespace ArraySum
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             int[] watch = new int[] { 1, 2, 3, 4, 5 };
@@ -62,15 +62,15 @@ namespace ArraySum
             int i = 0;
             int j = 0;
 
-            for(j=0; j<watch.Length-(interval-1); j++)
+            for(j=0; j<=watch.Length-(interval-1); j++)
             //for (j = 0; j < watch.Length - 1; j++)
             {
-
+                //[1,2,3,4,5]
                 for (i = 0; i <= 2; i++)
                 {
                     sum += watch[i + j];
-                    Console.WriteLine($"The sum is {sum}");
                     i++;
+                    Console.WriteLine($"The sum is {sum}");
                 }
                 returnArr[j] = sum;
                 Console.WriteLine($"The return array at j is now {returnArr[j]}");
