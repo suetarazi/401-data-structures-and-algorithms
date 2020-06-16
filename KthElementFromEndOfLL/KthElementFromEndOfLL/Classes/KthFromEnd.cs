@@ -16,18 +16,18 @@ namespace KthElementFromEndOfLL.Classes
         /// </summary>
         /// <param name="k">int</param>
         /// <returns>int value</returns>
-        public int LLKthFromEnd(LinkedList ll, int k)
+        public int LLKthFromEnd(Node ll, int k)
         {
                         
             int i = 0;
             int j = i - k;
 
             Current = Head;
-            while(Current != Null)
+            while(Current != null)
             {
-                Node.Next = Head;
+                ll.Next = Head;
                 i = i + 1;
-                Node.Current = j;
+                ll.Current = j;
                 j = i - k;
             }
             return Current.Value;
