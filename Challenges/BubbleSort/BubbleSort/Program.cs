@@ -16,25 +16,35 @@ namespace BubbleSort
         {
             int[] sortedArr = new int[inputArr.Length];
 
-            for(int i=0; i<inputArr.Length-1; i++)
-                for(int j=1; j<inputArr.Length-2; j++)
+            for (int i = 0, j = 0; i < 7; i++, j++)
             {
-                if(inputArr[i] > inputArr[j])
-                    {
-                        inputArr[i] = inputArr[j];
-                        inputArr[j] = inputArr[i];
-                    }
-                else if(inputArr[i] <= inputArr[j])
-                    {
-                        i++;
-                        j++;
-                    }
+
             }
 
-            foreach(int i in inputArr)
+            for (int i = 0; i < inputArr.Length - 1; i++)
             {
-                sortedArr[i] = inputArr[i];
-                Console.WriteLine(sortedArr[i]);
+                for (int j = 0; j < inputArr.Length - 1 - i; j++)
+                {
+                    //Console.WriteLine($"input i is {inputArr[i]} and input j is {inputArr[j]}");
+                    if (inputArr[i] > inputArr[i+1])
+                    {
+                        var temp = inputArr[j];
+                        inputArr[j] = inputArr[i];
+                        inputArr[i] = temp;
+
+                    }
+                    else if (inputArr[i] <= inputArr[j])
+                    {
+
+                    }
+                }
+            }
+
+            inputArr.CopyTo(sortedArr, 0);
+            foreach(int num in inputArr)
+            {
+                sortedArr = inputArr;
+                Console.WriteLine(num);
             }
                 return sortedArr;
         }

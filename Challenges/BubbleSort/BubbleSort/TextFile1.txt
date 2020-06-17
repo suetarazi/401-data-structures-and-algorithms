@@ -1,0 +1,5 @@
+
+loop (size of array):
+	for i = 0..array-1:
+		if array[i] > array[i+1]:
+			swap(array[i], array[i+1])
