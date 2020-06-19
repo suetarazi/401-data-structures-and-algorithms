@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace BubbleSort
 {
@@ -7,9 +8,9 @@ namespace BubbleSort
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Program p = new Program();
-            int[] testArr = new int[] { 5, 1, 4, 2, 8 };
-            p.BubbleSortMethod(testArr);
+            //Program p = new Program();
+            //int[] testArr = new int[] { 5, 1, 4, 2, 8 };
+            //p.BubbleSortMethod(testArr);
         }
 
         public int[] BubbleSortMethod(int[] inputArr)
