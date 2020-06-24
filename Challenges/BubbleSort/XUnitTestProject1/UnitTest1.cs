@@ -27,15 +27,24 @@ namespace XUnitTestProject1
             Assert.Equal(expected, actual);
         }
 
-        public void TestCharArray()
+        [Fact]
+        public void TestNullArray()
         {
             BubbleSort.Program p = new BubbleSort.Program();
-            char[] charArray = new char[] { 'c', 'a', 't' };
-            int[] actual = p.BubbleSortMethod(charArray);
+            int[] actual = p.BubbleSortMethod(null);
             int[] expected = new int[] { };
             Assert.Equal(expected, actual);
-
+                
         }
+
+        //other things to test:
+        //even length array vs odd length array
+        //already sorted array
+        //array sorted backwards
+        //array of length 1
+        //negative values
+        //int.maxvalue, int.minvalue, powers of 2
+        //duplicate values in an array
 
     }
 }
