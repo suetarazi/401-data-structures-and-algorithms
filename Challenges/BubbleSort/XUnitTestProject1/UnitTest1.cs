@@ -48,6 +48,16 @@ namespace XUnitTestProject1
         }
 
         [Fact]
+        public void TestAlreadySortedArraySort()
+        {
+            BubbleSort.Program p = new BubbleSort.Program();
+            int[] testArr = new int[] { 1, 2, 4, 5, 8 };
+            int[] actual = p.BubbleSortMethod(testArr);
+            int[] expected = testArr;
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
         public void TestNullArray()
         {
             BubbleSort.Program p = new BubbleSort.Program();
