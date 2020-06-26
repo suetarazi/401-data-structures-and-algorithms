@@ -31,7 +31,10 @@ namespace XUnitTestProject1
         public void TestNegativeIntInArrayForSort()
         {
             BubbleSort.Program p = new BubbleSort.Program();
-
+            int[] testArr = new int[] { 5, -1, 2, 8, 4 };
+            int[] actual = p.BubbleSortMethod(testArr);
+            int[] expected = new int[] { -1, 2, 4, 5, 8 };
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
