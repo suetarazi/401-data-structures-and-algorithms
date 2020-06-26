@@ -83,8 +83,8 @@ namespace XUnitTestProject1
             BubbleSort.Program p = new BubbleSort.Program();
             int[] actual = p.BubbleSortMethod(null);
             //int[] expected = new int[] { };
-            Assert.Throws<InvalidOperationException>((), actual);
-                
+            Assert.Throws<NullReferenceException>(() => actual);
+             
         }
 
         //other things to test:
