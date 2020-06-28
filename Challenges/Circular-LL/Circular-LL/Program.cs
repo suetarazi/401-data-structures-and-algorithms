@@ -43,5 +43,10 @@ namespace Circular_LL
             }
 
         }
+
+        public bool LLCircularTwoPointers(LinkedList<int> input)
+        {
+
+        }
     }
 }
