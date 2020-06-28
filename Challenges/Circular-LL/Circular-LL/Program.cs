@@ -54,6 +54,20 @@ namespace Circular_LL
 
             current = current.next;
 
+            while(current.next != null)
+            {
+                if(current.next = temp)
+                {
+                    return true;
+                }
+                else
+                {
+                    current = current.next;
+                    temp = temp.next;
+                }
+
+                return false;
+            }
 
         }
     }
