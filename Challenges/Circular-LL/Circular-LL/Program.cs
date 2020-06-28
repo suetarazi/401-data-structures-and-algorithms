@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Transactions;
+using Circular_LL.Node.cs;
 
 namespace Circular_LL
 {
@@ -21,6 +22,7 @@ namespace Circular_LL
             LinkedList<int> input = new LinkedList<int>();
             Program p = new Program();
             p.LLCircular(input);
+            Node node = new Node();
         }
 
         //public void CopyTo(Array array, int index)
@@ -48,7 +50,9 @@ namespace Circular_LL
 
         public bool LLCircularTwoPointers(LinkedList<int> input)
         {
-            LinkedListNode<int>.current = LinkedListNode<int>.head;
+           
+
+            LinkedListNode<int>.Current = LinkedListNode<int>.head;
             //input.Current = input.Head;
             temp = Head;
 
