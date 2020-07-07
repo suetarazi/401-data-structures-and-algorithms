@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Headers;
-using System.Transactions;
-using Circular_LL.Node.cs;
 
-namespace Circular_LL
+namespace Circular_LL.Node
 {
-    class Program 
+    public class Program 
     {
         //public int Count => throw new NotImplementedException();
 
@@ -50,17 +46,25 @@ namespace Circular_LL
 
         public bool LLCircularTwoPointers(LinkedList<int> input)
         {
-           
 
-            LinkedListNode<int>.Current = LinkedListNode<int>.head;
+            Current = Head;
+            Temp = Head;
+            //LinkedListNode<int>.Current = LinkedListNode<int>.head;
             //input.Current = input.Head;
-            temp = Head;
 
-            current = current.next;
 
-            while(current.next != null)
+            while (Current.next != null)
             {
-                if(current.next = temp)
+                Current = Node.Next;
+            }
+            while (Temp.Next != null)
+            {
+                Temp = Temp.Next;
+                Temp = Temp.Next;
+            }
+                
+
+                if(Node.Next == Node.Temp)
                 {
                     return true;
                 }
