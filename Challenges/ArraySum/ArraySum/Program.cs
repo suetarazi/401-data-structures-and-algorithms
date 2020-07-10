@@ -9,8 +9,9 @@ namespace ArraySum
         {
             Console.WriteLine("Hello World!");
             int[] watch = new int[] { 1, 2, 3, 4, 5 };
-            TVWatch(watch, 3);
-            TVWatch2(watch, 3);
+            //TVWatch(watch, 3);
+            //TVWatch2(watch, 3);
+            TVWatchNew(watch, 3);
 
         }
 
@@ -53,7 +54,27 @@ namespace ArraySum
             return resultsArr;
         }
 
+        public static int[] TVWatchNew(int[] watch, int interval)
+        {
+            int sum = 0;
+            List<int> result = new List<int>();
 
+            for (int i = 0; i < watch.Length - 1; i++)
+            {
+                for (int j = 0; j < watch.Length; j++)
+                {
+                    sum = j + (j + 1) + (j + 2);
+                    result.Add(sum);
+
+                }
+            }
+            int[] resultsArr = result.ToArray();
+            foreach(int value in resultsArr)
+            {
+                Console.WriteLine(value); ;
+            }
+            return resultsArr;
+        }
 
         public static int[] TVWatch(int[] watch, int interval)
         {
