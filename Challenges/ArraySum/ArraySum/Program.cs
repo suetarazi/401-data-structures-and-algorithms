@@ -54,6 +54,7 @@ namespace ArraySum
             return resultsArr;
         }
 
+        //[1,2,3,4,5], 3
         public static int[] TVWatchNew(int[] watch, int interval)
         {
             int sum = 0;
@@ -61,11 +62,13 @@ namespace ArraySum
 
             for (int i = 0; i < watch.Length - 1; i++)
             {
-                for (int j = 0; j < watch.Length; j++)
+                sum = 0;
+                
+                for (int j = 0; j < interval; j++)
                 {
                     sum = j + (j + 1) + (j + 2);
-                    result.Add(sum);
 
+                    result.Add(sum);
                 }
             }
             int[] resultsArr = result.ToArray();
