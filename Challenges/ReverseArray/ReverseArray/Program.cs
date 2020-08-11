@@ -1,8 +1,9 @@
 ﻿using System;
 
+
 namespace ReverseArray
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,7 +13,7 @@ namespace ReverseArray
 
         public int[] ArrayReverse1(int[] arr)
         {
-            for(int i = arr.Length; i >= 0; i--)
+            for(int i = arr.Length-1; i >= 0; i--)
             {
                 arr[i] = i;
             }
