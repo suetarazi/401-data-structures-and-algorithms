@@ -11,4 +11,6 @@
 1. BinaryTree and BinaryTreeSearch
 1. FizzBuzzTree
 1. Tree: Breadth First
+1. Reverse Array - Two Ways
+
 
