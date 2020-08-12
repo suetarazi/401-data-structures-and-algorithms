@@ -142,29 +142,6 @@ public class Linklist
 
         }
 
-        /// <summary>
-        /// Takes in a number k and returns the kth from the end node value
-        /// </summary>
-        /// <param name="k">int value to search from the end of the list by</param>
-        /// <returns></returns>
-        public int LLKthFromEnd(int k)
-        {
-            Current = Head;
 
-            try
-                {
-                for(int i=1; i < k+1; i++)
-                {
-                    Current = Current.Next;
-                
-                }
-             
-                return Current.Value;
-                }
-            catch
-                {
-                throw new Exception("Exceeded length of list");
-                }
-        }
 }
 }
